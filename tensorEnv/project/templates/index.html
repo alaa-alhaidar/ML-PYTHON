@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Execution Plan</title>
+</head>
+<body>
+    <h1>Enter Execution Plan</h1>
+<form method="POST">
+    <!-- Inputs for user-defined step names -->
+    <label for="step_name">Step Name:</label>
+    <input type="text" name="step_name"><br>
+    <label for="step_description">Step Description:</label>
+    <input type="text" name="step_description"><br>
+    <label for="order">Order:</label>
+    <input type="number" name="order"><br>
+    <label for="algorithm_choice">Algorithm Choice:</label>
+    <input type="text" name="algorithm_choice"><br>
+    <label for="metadata">Metadata:</label>
+    <input type="text" name="metadata"><br>
+    <input type="submit" value="Generate Graph">
+</form>
+
+
+    <br>
+        <button onclick="window.open('http://localhost:6006/?logdir=logs/execution_plan', '_blank')">Open TensorBoard</button>
+
+
+</body>
+</html>
